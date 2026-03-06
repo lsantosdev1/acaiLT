@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>L&T Açaí</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>L&T Açaí</h1>
+      <p>Monte seu Açaí 🍇</p>
+    </header>
+
+    <div class="container">
+      <h2>Tamanho</h2>
+
+      <label>
+        <input type="radio" name="tamanho" value="Açaí 300ml|12" />
+        AÇAÍ 300ml - R$12,00
+      </label>
+
+      <label>
+        <input type="radio" name="tamanho" value="Açaí 500ml|16" />
+        AÇAÍ 500ml - R$16,00
+      </label>
+
+      <label>
+        <input type="radio" name="tamanho" value="Açaí 1L|24.99" />
+        AÇAÍ 1 Litro - R$24,99
+      </label>
+
+      <h2>Complementos</h2>
+
+      <label><input type="checkbox" value="Amendoim" /> Amendoim</label>
+      <label><input type="checkbox" value="Choco Ball" /> Choco Ball</label>
+      <label><input type="checkbox" value="Sucrilhos" /> Sucrilhos</label>
+      <label
+        ><input type="checkbox" value="Flocos de arroz" /> Flocos de
+        arroz</label
+      >
+      <label><input type="checkbox" value="Granola" /> Granola</label>
+      <label><input type="checkbox" value="Jujuba" /> Jujuba</label>
+      <label><input type="checkbox" value="Aveia" /> Aveia</label>
+      <label><input type="checkbox" value="Biscoito" /> Biscoito</label>
+
+      <h2>Caldas</h2>
+
+      <label><input type="checkbox" value="Calda de morango" /> Morango</label>
+      <label
+        ><input type="checkbox" value="Leite condensado" /> Leite
+        condensado</label
+      >
+      <label><input type="checkbox" value="Calda de uva" /> Uva</label>
+      <label
+        ><input type="checkbox" value="Calda de chocolate" /> Chocolate</label
+      >
+
+      <h2>Adicionais</h2>
+
+      <label>
+        <input type="checkbox" value="Leite em pó|2" />
+        Leite em pó (+R$2,00)
+      </label>
+
+      <label>
+        <input type="checkbox" value="Banana|2.5" />
+        Banana (+R$2,50)
+      </label>
+
+      <label>
+        <input type="checkbox" value="Morango|2.5" />
+        Morango (+R$2,50)
+      </label>
+
+      <div class="total">Total: R$ <span id="total">0.00</span></div>
+
+      <button onclick="enviarPedido()">Fazer Pedido</button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
